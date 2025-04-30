@@ -92,7 +92,9 @@ df_baby_names = pd.read_csv(".learn/assets/us_baby_names_right.csv")
 # print(df_value_counts)
 
 # 06.3 Group By
-df_group_by = df_baby_names.groupby
+df_group_by = df_baby_names.groupby(by="Name")
+result = df_group_by.sum()
+print(len(result))
 
 
 
