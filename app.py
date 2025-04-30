@@ -67,8 +67,21 @@ df_poke = pd.read_csv(".learn/assets/pokemon_data.csv")
 # print(df_tail)
 
 # 05.5 Print Columns
-df_columns = df_poke[["Name", "Type 1"]][0:10]
-print(df_columns)
+# df_columns = df_poke[["Name", "Type 1"]][0:10]
+# print(df_columns)
+
+# 05.6 Loc Function
+# df_loc_func = df_poke.loc[df_poke["Attack"] > 80]
+# print(df_loc_func)
+
+# 05.7 Filter and Count
+# pd_poke_legendary= df_poke.loc[df_poke["Legendary"] == True]
+# legendaries_count = len(pd_poke_legendary)
+# print(legendaries_count)
+
+# 06 Clean Datasets 
+
+
 
 
 
