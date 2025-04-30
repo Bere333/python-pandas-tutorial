@@ -54,7 +54,7 @@ import pandas as pd
 # print(df_carsbrands)
 
 # 05.2 DataFrame iLoc
-df_poke = pd.read_csv(".learn/assets/pokemon_data.csv")
+# df_poke = pd.read_csv(".learn/assets/pokemon_data.csv")
 # df_cells = df_poke.iloc[133, 6]
 # print(df_cells)
 
@@ -80,7 +80,19 @@ df_poke = pd.read_csv(".learn/assets/pokemon_data.csv")
 # print(legendaries_count)
 
 # 06 Clean Datasets 
+df_baby_names = pd.read_csv(".learn/assets/us_baby_names_right.csv")
+# print(df_baby_names.head(5))
 
+# 06.1 Remove Column 
+# df_remove_column = df_baby_names.drop(columns=["Unnamed: 0"])
+# print(df_remove_column.head(5))
+
+# 06.2 Value Counts
+# df_value_counts = df_baby_names.value_counts("Gender")
+# print(df_value_counts)
+
+# 06.3 Group By
+df_group_by = df_baby_names.groupby
 
 
 
